@@ -3,7 +3,7 @@
 }
 
 * {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -19,9 +19,11 @@
   color: #fff;
 }
 
-html {
+html, body {
   font-size: 62.5%;
   overflow-x: hidden;
+  height: 300rem;
+  padding-top: 36px;
 }
 
 html::-webkit-scrollbar {
@@ -54,10 +56,15 @@ header {
 
 header .logo {
   color: white;
-  width: 120px;
+  width: 170px;
+}
+
+header .navbar {
+  display: block;
 }
 
 header .navbar ul {
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,7 +76,10 @@ header .navbar ul li {
 }
 
 header .navbar ul li a {
-  font-size: 2rem;
+  display: block;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: bold;
   color: #fff;
 }
 
@@ -79,13 +89,17 @@ header .navbar ul li a:hover {
 }
 
 header #login {
-  font-size: 3rem;
+  font-size: 20px;
   color: #fff;
   cursor: pointer;
 }
 
+header #login:hover {
+  color: rgb(65, 62, 62);
+}
+
 header #menu {
-  font-size: 3rem;
+  font-size: 15px;
   color: #fff;
   cursor: pointer;
   display: none;
@@ -155,17 +169,6 @@ input::-webkit-inner-spin-button {
   border-color: #f39c12;
 }
 
-.btn {
-  padding: 0.7rem 3rem;
-  font-size: 2rem;
-  color: #fff;
-  background: var(--gradient);
-  border-radius: 5rem;
-  margin-top: 1rem;
-  cursor: pointer;
-  box-shadow: 0 0.1rem 0.3rem #333;
-}
-
 .login-form form .btn {
   width: 100%;
   margin: 2rem 0;
@@ -187,11 +190,58 @@ input::-webkit-inner-spin-button {
 .login-form form .fa-times:hover {
   color: #444;
 }
+/* Login Form End */
+
+
+/* Section Banner */
+
+.banner {
+  position: relative;
+  background:linear-gradient(rgba(0, 0, 0, 0.425), rgba(0, 0, 0, 0.425)), url(vasBanner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.banner-text {
+  color: white;
+}
+
+.banner-text h1 {
+  font-size: 35px;
+}
+
+.banner-text p {
+  font-size: 20px;
+}
+
+.banner .form {
+  background-color: rgba(0, 0, 0, 0.308);
+  color: #fff;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+/* Section Banner End */
+
+
+/* About Section */
+
+.about {
+  background: url(aboutUs.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+}
+
 
 @media (max-width: 900px) {
-  html {
+  /* html {
     font-size: 40%;
-  }
+  } */
 }
 
 @media (max-width: 768px) {
@@ -237,12 +287,16 @@ input::-webkit-inner-spin-button {
   }
 
   header .navbar.nav-toggle {
-    top: 6.4rem;
+    top: 11.8rem;
+  }
+
+  header .logo {
+    margin-left: 18px;
   }
 }
 
 @media (max-width: 500px) {
-  html {
-    font-size: 30%;
+  header .navbar.nav-toggle {
+    top: 11.8rem;
   }
 }
