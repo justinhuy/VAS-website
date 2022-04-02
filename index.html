@@ -44,45 +44,49 @@
 </div>
 
 <section class="banner">
-    <div class="container-fluid">
-        <div class="row vh-100 banner">
-            <div class="col-sm-8 text-center d-flex flex-column justify-content-center">
+    <div class="container-fluid min-vh-100">
+        <div class="row min-vh-100 ">
+            <div class="col-12 col-md-6 text-center d-flex flex-column justify-content-center mb-5 mb-md-0">
                 <div class="banner-text">
-                    <img style="width:400px" src="QTVU.png" alt="">
+                    <img class="banner-logo" src="QTVU.png" alt="">
                     <h1>BLAH BLAH BLAH</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, repellendus!</p>
                     <button style="width:100px;" type="button" class="btn btn-primary">XEM THÊM</button>
                 </div>
             </div>
-            <div class="col-sm-4 text-center d-flex flex-column justify-content-center">
-                <form action="">
-                    <div class="inputBox">
-                    <h2>Họ và Tên(*):</h2>
-                    <input type="text" name="" placeholder="Họ và tên" id="" required>
+            <div class="col-12 col-md-6 text-center d-flex flex-column justify-content-center mb-5 mb-md-0">
+                <form>
+                    <h1>Đăng ký tư vấn tại nhà</h1>
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Họ và Tên(*):</label>
+                        <input type="text" class="form-control" id="fullName" placeholder="Nhập tên đầy đủ của bạn">
+                      </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email của bạn(*):</label>
+                      <input type="email" class="form-control" id="email" placeholder="Nhập email của bạn">
                     </div>
-                    <div class="inputBox">
-                        <h2>Số Điện Thoại(*):</h2>
-                        <input type="text" name="" placeholder="Số điện thoại" id="" required>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Địa chỉ(*):</label>
+                        <input type="text" class="form-control" id="adress" placeholder="Nhập tên đầy đủ của bạn">
+                      </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Số điện thoại(*):</label>
+                        <input type="number" class="form-control" id="phone" placeholder="Nhập số điện thoại của bạn">
                     </div>
-                    <div class="inputBox">
-                        <h2>Email(*):</h2>
-                        <input type="text" name="" placeholder="Điền email của bạn" id="" required>
+                    <div class="mb-3">
+                        <label for="chillName" class="form-label">Tên con của bạn:</label>
+                        <input type="text" class="form-control" id="chillName" placeholder="Nhập tên con của bạn">
                     </div>
-                    <div class="inputBox">
-                        <h2>Họ và Tên Của Bé:</h2>
-                        <input type="text" name="" placeholder="Họ và tên của bé" id="">
+                    <div class="mb-3">
+                        <label for="chillAge" class="form-label">Tuổi con của bạn:</label>
+                        <input type="number" class="form-control" id="chillAge" placeholder="Nhập tuổi con của bạn">
                     </div>
-                    <div class="inputBox">
-                        <h2>Tuổi của bé:</h2>
-                        <input type="number" name="" placeholder="Tuổi của bé" id="">
-                    </div>
-                    <div class="inputBox">
-                        <h2>Thắc mắc của bạn:</h2>
-                        <textarea name="" placeholder="Điền thắc mắc của bạn" id=""></textarea>
-                    <div class="inputBox">
-                        <input type="submit" name="" value="XÁC NHẬN" id="">
-                    </div>
-                </form>
+                    <div class="mb-3">
+                        <label for="problem" class="form-label">Thắc mắc của bạn</label>
+                        <textarea class="form-control" id="problem" rows="3" placeholder="Nhập thắc mắc của bạn"></textarea>
+                      </div>
+                    <button type="submit" class="btn btn-primary">XÁC NHẬN</button>
+                  </form>
             </div>
         </div>
     </div>
@@ -91,9 +95,12 @@
 <!-- About section starts -->
 
 <section class="about">
-    <h2>Giới thiệu</h2>
-    <p>Hệ thống trường Quốc tế Việt Úc (VAS) được thành lập vào năm 2004, đào tạo từ bậc mầm non đến hết bậc phổ thông trung học. VAS được chính phủ Việt Nam cấp phép hoạt động và nằm trong hệ thống giáo dục quốc gia. Hiện VAS đang giảng dạy gần 9,500 học sinh từ mầm non đến lớp 12 tại 7 cơ sở nằm ở thành phố Hồ Chí Minh.</p>
-</section>
+    <div class="container">
+        <h2>Giới thiệu</h2>
+        <p>Hệ thống trường Quốc tế Việt Úc (VAS) được thành lập vào năm 2004, đào tạo từ bậc mầm non đến hết bậc phổ thông trung học. VAS được chính phủ Việt Nam cấp phép hoạt động và nằm trong hệ thống giáo dục quốc gia. Hiện VAS đang giảng dạy gần 9,500 học sinh từ mầm non đến lớp 12 tại 7 cơ sở nằm ở thành phố Hồ Chí Minh.</p>
+    </section>
+    </div>
+ 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
@@ -101,52 +108,3 @@
 </html>
 
 
-
-
-
-<!-- 
-<div class="banner">
-    <div class="banner-background">
-    <div class="overlay"></div>
-        <div class="banner-text">
-            <img src="QTVU.png" alt="">
-            <div style="margin: 30px 0;" class="text">
-                <h1>BLAH BLAH BLAH</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, officia.</p>
-            </div>          
-            <a href="#" class="learn-more-btn">Chi tiết</a>
-        </div>
-        <div class="contact">
-            <div class="contactForm">
-                <form action="">
-                    <div class="inputBox">
-                    <h2>Họ và Tên(*):</h2>
-                    <input type="text" name="" placeholder="Họ và tên" id="" required>
-                    </div>
-                    <div class="inputBox">
-                        <h2>Số Điện Thoại(*):</h2>
-                        <input type="text" name="" placeholder="Số điện thoại" id="" required>
-                    </div>
-                    <div class="inputBox">
-                        <h2>Email(*):</h2>
-                        <input type="text" name="" placeholder="Điền email của bạn" id="" required>
-                    </div>
-                    <div class="inputBox">
-                        <h2>Họ và Tên Của Bé:</h2>
-                        <input type="text" name="" placeholder="Họ và tên của bé" id="">
-                    </div>
-                    <div class="inputBox">
-                        <h2>Tuổi của bé:</h2>
-                        <input type="number" name="" placeholder="Tuổi của bé" id="">
-                    </div>
-                    <div class="inputBox">
-                        <h2>Thắc mắc của bạn:</h2>
-                        <textarea name="" placeholder="Điền thắc mắc của bạn" id=""></textarea>
-                    <div class="inputBox">
-                        <input type="submit" name="" value="XÁC NHẬN" id="">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div> -->
