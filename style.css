@@ -10,7 +10,6 @@
   border: none;
   outline: none;
   text-decoration: none;
-  text-transform: capitalize;
   transition: all 0.2s linear;
 }
 
@@ -22,7 +21,9 @@
 html, body {
   font-size: 62.5%;
   overflow-x: hidden;
-  height: 300rem;
+  height: 100%;
+  background: #eee6e6 !important;
+  overflow: visible;
   /* padding-top: 36px; */
 }
 
@@ -200,6 +201,7 @@ input::-webkit-inner-spin-button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 50px;
 }
 
 .banner-logo {
@@ -240,6 +242,7 @@ form {
 form label {
   display: flex;
   margin-top: 10px;
+  font-size: 1.4rem;
 }
 
 input,
@@ -255,12 +258,33 @@ textarea {
 
 /* About Section */
 
-.about {
-  background: url(aboutUs.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.content {
+  margin: 100px 0 ;
 }
+
+.img-fluid {
+  border-radius: 5px;
+}
+
+.about h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #353535;
+}
+
+.about p {
+  font-size: 15px;
+  margin-bottom: 30px;
+  color: #716D67;
+}
+
+.about .btn {
+  width: 12rem;
+  height: 4rem;
+  font-size: 12px;
+  border-radius: 20px !important;
+}
+
 
 
 @media (max-width: 768px) {
@@ -269,6 +293,7 @@ textarea {
   } */
   margin-top: 59px;
 }
+
 
 .logo {
   width: 130px !important;
@@ -283,8 +308,15 @@ textarea {
 }
 
 .banner-text {
-  font-size: 1.5rem !important;
   margin-top: 50px;
+}
+
+.banner-text h1 {
+  font-size: 25px;
+}
+
+.banner-text p {
+  font-size: 15px;
 }
 
 
@@ -335,4 +367,64 @@ textarea {
   header .navbar.nav-toggle {
     top: 11.8rem;
   }
+}
+
+
+/* Section Contact */
+
+.contact {
+  padding: 50px 0 80px;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #bbb6b6;
+}
+
+.contact p {
+  padding-bottom: 80px;
+  color: #737373;
+}
+
+.contact h1 {
+  color: #000000;
+  margin: 20px 0 50px;
+  font-weight: bold;
+}
+
+.contact .input-group {
+  margin-bottom: 25px;
+}
+
+.contact .form-control {
+  border-radius: 0 !important;
+}
+
+.contact span {
+  border-radius: 0 !important;
+}
+
+.contact .btn {
+  border-radius: 0 !important;
+  width: 100%;
+  font-size: 15px;
+  background-color: rgb(220, 53, 69);
+  border-color: rgb(220, 53, 69);
+  color: #fff;
+}
+
+.contact .btn:hover {
+  background-color:  rgb(187, 45, 59)   ;
+  border-color: rgb(176, 42, 55);
+  color: #fff !important;
+}
+
+
+.btn {
+  border-radius: 15px !important;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 4rem !important;
+  height: 4rem !important;
+  background: #000000;
 }
