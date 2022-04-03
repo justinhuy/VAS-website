@@ -17,9 +17,9 @@
 <header>
 
     <div id="menu" class="fas fa-bars"></div>
-    <a href=""><img class="logo" src="logo.png" alt=""></a>
+    <a href="#banner"><img class="logo" src="logo.png" alt=""></a>
 
-    <nav class="navbar">
+    <!-- <nav class="navbar">
         <ul>
             <li><a class="active" href="#home">TRANG CHỦ</a></li>
             <li><a href="#about">GIỚI THIỆU</a></li>
@@ -27,30 +27,19 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
+    </nav> -->
 
-    <div id="login"><i style="margin-right: 10px;" class="fas fa-phone"></i>TƯ VẤN</div>
+    <div id="login"><i style="margin-right: 10px;" class="fas fa-phone"></i><a style="text-decoration: none; color: #fff;" href="#contact">TƯ VẤN</a></div>
 </header>
 
-<div class="login-form">
-    <form action="">
-        <h3>ĐĂNG KÝ ĐỂ ĐƯỢC TƯ VẤN</h3>
-        <input type="text" placeholder="Họ và Tên" class="box">
-        <input type="number" placeholder="Số Điện Thoại" class="box">
-        <input type="email" placeholder="Nhập Email" class="box">
-        <input type="submit" class="btn" value="login">
-        <i class="fas fa-times"></i>
-    </form>
-</div>
-
-<section class="banner">
+<div id="banner" class="banner">
     <div class="container-fluid min-vh-100">
-        <div class="row min-vh-100 ">
+        <div class="row min-vh-100">
             <div class="col-12 col-md-6 text-center d-flex flex-column justify-content-center mb-5 mb-md-0">
                 <div class="banner-text">
                     <img class="banner-logo" src="QTVU.png" alt="">
                     <h1 style="margin: 20px 0;">Sức mạnh của tri thức<br>chìa khóa mở cửa tương lai</h1>
-                    <button type="button" class="btn btn-danger">XEM THÊM</button>
+                    <a href="https://www.vas.edu.vn/"><button type="button" class="btn btn-danger">XEM THÊM</button></a>
                 </div>
             </div>
             <div class="col-12 col-md-6 text-center d-flex flex-column justify-content-center mb-5 mb-md-0">
@@ -65,7 +54,7 @@
                       <input type="email" class="form-control" id="email" placeholder="Nhập email của bạn">
                     </div>
                     <div class="mb-3">
-                        <label for="address" class="form-label">Địa chỉ(*):</label>
+                        <label for="address" class="form-label">Khu vực sinh sống(*):</label>
                         <input type="text" class="form-control" id="adress" placeholder="Nhập tên đầy đủ của bạn">
                       </div>
                     <div class="mb-3">
@@ -73,11 +62,7 @@
                         <input type="number" class="form-control" id="phone" placeholder="Nhập số điện thoại của bạn">
                     </div>
                     <div class="mb-3">
-                        <label for="chillName" class="form-label">Tên con của bạn:</label>
-                        <input type="text" class="form-control" id="chillName" placeholder="Nhập tên con của bạn">
-                    </div>
-                    <div class="mb-3">
-                        <label for="chillAge" class="form-label">Tuổi con của bạn:</label>
+                        <label for="chillAge" class="form-label">Tuổi của học viên:</label>
                         <input type="number" class="form-control" id="chillAge" placeholder="Nhập tuổi con của bạn">
                     </div>
                     <div class="mb-3">
@@ -89,75 +74,130 @@
             </div>
         </div>
     </div>
-</section>
+  </div>
 
+
+<!-- Section Video -->
+
+
+  <section class=" video container-fluid">
+      <div id="logo-container" class="text-center"></div>
+      <div class="container">
+        <h1 style="color: white ;" class="text-center mb-5">Giới thiệu</h1>
+        <div id="videoSection" class="container d-flex justify-content-center align-items-center">
+            <div class="video fade-in">
+                <iframe width="730" height="410" src="y2meta.com-PHÁT HUY MỌI TIỀM NĂNG CỦA MÌNH DƯỚI MÁI TRƯỜNG VAS-(1080p).mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+      </section>
+
+<!-- Section Video End -->
 <!-- About section starts -->
 
 <section class="container-fluid about">
     <div class="row align-items-center content">
-        <div class="col-md-6 order-2 text-center">
+        <div class="col-md-6 order-1 order-md-2 text-center slide-in from-right">
           <img class="img-fluid" src="aboutUs.jpg" alt="">
         </div>
-        <div class="col-md-6 order-1 mb-5 mb-md-0">
+        <div class="col-md-6 order-1 mb-5 mb-md-0 slide-in from-left">
           <div class="row justify-content-center">
             <div class="info col-10 col-lg-8">
               <h1>Mong muốn nhất của bạn dành cho con là gì?</h1>
               <p>Đa số phụ huynh đều mong muốn con mình nhận được nền tảng giáo dục tốt, giúp các em thành công trong tương lai. Ngoài việc học, các con vẫn có thể phát triển về cá tính và thể chất. Khi đến trường, đến lớp có sự vui vẻ, thoải mái và thích thú với việc học của mình.
             </p>
-            <button type="button" class="btn btn-danger">TƯ VẤN</button>
+            <a href="#banner"><button type="button" class="btn btn-danger">TƯ VẤN</button></a>
             </div>      
           </div>
         </div>
       </div>
 </section>
 
-<section class="container-fluid  about">
-    <div class="row align-items-center content">
-        <div class="col-md-6 order-1 text-center slide-in from-right">
-          <img class="img-fluid" src="aboutUs.jpg" alt="">
-        </div>
-        <div class="col-md-6 order-2 mb-5 mb-md-0">
-          <div class="row justify-content-center">
-            <div class="info col-10 col-lg-8">
-              <h1>Xã hội nói gì về VAS?</h1>
-              <p>
-                Hệ thống trường VAS có cơ sở vật chất hiện đại, các chương trình bồi dưỡng có chuyên môn được tổ chức liên tục và có hiệu quả. Môi trường làm việc và học tập tốt, tạo nên sự thoải mái cho giáo viên cũng như học sinh. Các em học sinh học tại hệ thống trường VAS đều nắm vững được kiến thức cũng như các kĩ năng mềm cần thiết.                
-            </p>
-            </div>      
+<section id="gallery">
+  <div class="container">
+      <div class="row">
+        <h1 style="font-size: 40px; color: #fff ;" class="text-center mt-5 mb-5">Xã hội nói gì về VAS</h1>
+          <div class="col-4 mb-4">
+              <div class="card">
+                  <a href=""><img src="Vassocial1.jpg" class="card-img-top img-thumbnail" alt="..."></a>
+                  <div class="card-body">
+                      <h5 class="card-title">Chương trình Cambridge mang tính hướng nghiệp tại VAS</h5>
+                      <p class="card-text">Học sinh VAS tiếp cận môn khoa học xã hội ứng dụng cao như Viễn cảnh toàn cầu, Kinh doanh, Kinh tế, góp phần định hướng nghề nghiệp tương lai.<br>
+                       </p>
+                        <button type="button" class="btn btn-danger">XEM THÊM</button>
+                  </div>
+              </div>
           </div>
+          <div class="col-4 mb-4">
+              <div class="card">
+                 <a href=""><img src="vassocial2.jpg" class="card-img-top img-thumbnail" alt="..."></a> 
+                  <div class="card-body">
+                      <h5 class="card-title">VAS đã làm gì cho những giá trị bền vững?</h5>
+                      <p class="card-text">VAS đã trải qua quá trình nỗ lực xây dựng nền tảng giá trị bền vững. Đây là những yếu tố tạo nên danh tiếng cho VAS.
+                        9 yếu tố sau đây là thành quả, cũng là yếu tố tạo nên giá trị mang bản sắc của VAS.</p>
+                          <button type="button" class="btn btn-danger">XEM THÊM</button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card">
+               <a href=""><img src="kinhtevas.jpg" class="card-img-top img-thumbnail" alt="..."></a> 
+                <div class="card-body">
+                    <h5 class="card-title">Học kinh tế, tập kinh doanh từ trung học tại VAS</h5>
+                    <p class="card-text">Học sinh lớp 9-12 tại VAS làm quen với môn kinh tế, cách kêu gọi vốn, thực hiện ý tưởng kinh doanh, trích lợi nhuận cho tổ chức từ thiện.</p>
+                        <button type="button" class="btn btn-danger">XEM THÊM</button>
+                </div>
+            </div>
         </div>
-      </div>
+  </div>
 </section>
 
 <section class="container-fluid about">
     <div class="row align-items-center content">
-        <div class="col-md-6 order-2 text-center">
+        <div class="col-md-6 order-1 text-center slide-in from-left">
           <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="aboutUs.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="vasBanner.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
                 <img src="schoolYard.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>Trường</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="tiensanh.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Tiền sảnh</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="lophoc.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Lớp học</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="thethaotrongnha.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Thể thao trong nhà</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="thuvien.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Thư viện</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="santruong.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Sân trường</h5>
                 </div>
               </div>
             </div>
@@ -171,14 +211,14 @@
             </button>
           </div>
         </div>
-        <div class="col-md-6 order-1 mb-5 mb-md-0">
+        <div class="col-md-6 order-1 mb-5 mb-md-0 slide-in from-right">
           <div class="row justify-content-center">
             <div class="info col-10 col-lg-8">
               <h1>Tại VAS như thế nào?
             </h1>
               <p>Tại VAS chúng tôi mong muốn mang đến cho học sinh của mình một nền tảng giáo dục tốt nhất. Áp dụng những phương pháp dạy tiên tiến trang bị cho các em học sinh những phông văn hóa, kiến thức học thuật vững vàng. Và VAS hướng đến mục tiêu tạo ra môi trường học đường thoải mái, lành mạnh và an toàn, mang đến những trải nghiệm thú vị giúp cho các em thể hiện tối đa khả năng thiên phú của mình.
             </p>
-            <button type="button" class="btn btn-danger">TƯ VẤN</button>
+            <a href="#banner"><button type="button" class="btn btn-danger">TƯ VẤN</button></a>
             </div>      
           </div>
         </div>
@@ -186,11 +226,11 @@
 </section>
 <section class="container-fluid about">
     <div class="row align-items-center content">
-        <div class="col-md-6 order-1 text-center">
-          <img class="img-fluid" src="schoolYard.jpg" alt="">
+        <div class="col-md-6 order-1 order-md-2 text-center slide-in from-right">
+          <img class="img-fluid" src="noidung.jpg" alt="">
         </div>
-        <div class="col-md-6 order-2 mb-5 mb-md-0">
-          <div class="row justify-content-center">
+        <div class="col-md-6 order-2 order-md-1 mb-5 mb-md-0 slide-in from-left">
+          <div class="row justify-content-center ">
             <div class="info col-10 col-lg-8">
               <h1>Nội dung, lịch biểu giảng dạy tại VAS
             </h1>
@@ -210,10 +250,10 @@
 </section>
 <section class="container-fluid about">
     <div class="row align-items-center content">
-        <div class="col-md-6 order-2 text-center slide-in from-right">
-          <img class="img-fluid" src="aboutUs.jpg" alt="">
+        <div class="col-md-6 order-1 text-center slide-in from-left">
+          <img class="img-fluid" src="vashocphi.jpg" alt="">
         </div>
-        <div class="col-md-6 order-1 mb-5 mb-md-0">
+        <div class="col-md-6 order-1 mb-5 mb-md-0 slide-in from-right">
           <div class="row justify-content-center">
             <div class="info col-10 col-lg-8">
               <h1>Học phí VAS</h1>
@@ -232,7 +272,7 @@
     <div class="contact" id="contact">
         <div class="container">
             <div class="row">
-                <h1>Liên hệ</h1>
+                <h1 style="color: #fff; font-size: 30px;">Liên hệ</h1>
                 <div class="col-lg-6 col-md-6">
                     <div class="input-group input-group-lg">
                         <span class="input-group-addon" id="name"></span>
@@ -251,7 +291,7 @@
                     <div class="input-group">
                         <textarea placeholder="Thắc mắc của bạn cần giải đáp" name="" id="" cols="80" rows="6" class="form-control"></textarea>
                     </div>
-                    <button type="button" class="btn btn-danger">XÁC NHẬN</button>
+                    <button style="overflow: hidden;" type="button" class="btn btn-danger">XÁC NHẬN</button>
                 </div>
             </div>
         </div>
